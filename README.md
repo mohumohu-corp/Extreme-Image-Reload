@@ -13,7 +13,7 @@
 - When textures set in blender materials are rewritten by external software, they are automatically reloaded by Blender and reflected in the ViewPort.
 - There are three modes: Disabled, Enabled, and AnimEnabled. Only in AnimEnabled mode, textures are updated even during animation playback.
 
-| State / Mode    | ![enabled](https://raw.githubusercontent.com/mohumohu-corp/ExtremeImageReload/images/off.png)Disabled | ![enabled](https://raw.githubusercontent.com/mohumohu-corp/ExtremeImageReload/images/enabled.png) Enabled | ![enabled](https://raw.githubusercontent.com/mohumohu-corp/ExtremeImageReload/images/anim_enabled.png)AnimEnabled |
+| State / Mode    | ![disabled](https://raw.githubusercontent.com/mohumohu-corp/ExtremeImageReload/images/off.png)Disabled | ![anim_enabled](https://raw.githubusercontent.com/mohumohu-corp/ExtremeImageReload/images/enabled.png) Enabled | ![enabled](https://raw.githubusercontent.com/mohumohu-corp/ExtremeImageReload/images/anim_enabled.png)AnimEnabled |
 |-----------------|-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | Normal          | off                                                                                                   | on                                                                                                        | on                                                                                                                |
 | During Playback | off                                                                                                   | off                                                                                                       | on                                                                                                                |
@@ -22,6 +22,4 @@
 
 - There is a toggle button in the upper right corner of the 3D Viewport window.
 
-![enabled](https://raw.githubusercontent.com/mohumohu-corp/ExtremeImageReload/images/location.png)
-
-
+![location](https://raw.githubusercontent.com/mohumohu-corp/ExtremeImageReload/images/location.png)
