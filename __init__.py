@@ -133,7 +133,7 @@ def reload_images():
     return should_redraw
 
 
-def reload_timer():
+def eir_timer():
     enabled = bpy.context.scene.eir_enabled
     if enabled < ENABLED:
         return 1.0
@@ -169,8 +169,8 @@ def register():
     bpy.types.Image.eir_udim_timestamps = bpy.props.PointerProperty(
         name="UDIM Timestamps", type=UdimTimeStamps)
 
-    if not bpy.app.timers.is_registered(reload_timer):
-        bpy.app.timers.register(reload_timer, persistent=True)
+    if not bpy.app.timers.is_registered(eir_timer):
+        bpy.app.timers.register(eir_timer, persistent=True)
 
     bpy.types.VIEW3D_HT_header.append(draw_header_button)
 
@@ -180,8 +180,8 @@ def unregister():
     del bpy.types.Image.eir_last_update
     del bpy.types.Image.eir_udim_timestamps
 
-    if bpy.app.timers.is_registered(reload_timer):
-        bpy.app.timers.unregister(reload_timer)
+    if bpy.app.timers.is_registered(eir_timer):
+        bpy.app.timers.unregister(eir_timer)
 
     bpy.types.VIEW3D_HT_header.remove(draw_header_button)
 
